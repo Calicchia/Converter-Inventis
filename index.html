@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery.js"></script>
+  <script lang="javascript" src="xlsx.full.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div id="header">
+    <h1>Welcome</h1>
+    <p>Here you can convert your .xlsx files to .csv and visa versa.</p>
+  </div>
+
+  <div id="wrapper">
+
+    <form>
+      <img src="Images/xlsx.png" alt="xlsx">
+      <div class="input-file-container">
+        <input class="input-file" id="my-fileX" type="file" accept=".xlsx">
+        <label tabindex="0" for="my-file" class="input-file-trigger">XLSX To CSV</label>
+      </div>
+      <p class="file-return"></p>
+      <p class="text">Click on the button to choose a xlsx file that you want to convert to csv</p>
+    </form>
+
+    <div class="img-box">
+      <img src="Images/arrowUp.png" class="arrowUp" alt="arrow">
+      <img src="Images/arrow.svg" class="arrowSide" alt="arrow">
+    </div>
+
+    <form>
+      <img src="Images/csv.png" alt="csv">
+      <div class="input-file-container">
+        <input class="input-file2" id="my-fileC" type="file" accept=".csv">
+        <label tabindex="0" for="my-file" class="input-file-trigger">CSV To XLSX</label>
+      </div>
+      <p class="file-return"></p>
+      <p class="text">Click on the button to choose a csv file that you want to convert to xlsx</p>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

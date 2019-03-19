@@ -1,0 +1,116 @@
+body {
+  font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
+  color: #7F8C9A;
+  height: 100vh;
+  margin: 0;
+}
+form {
+  width: 100%;
+  text-align:center;
+}
+
+
+/*Images*/
+img {
+  margin-bottom: 10px;
+  height: 100px;
+  width: 90px;
+}
+.arrowSide {
+  display: none;
+  margin: auto;
+}
+.arrowUp {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  filter: opacity(50%)
+}
+
+
+.text {
+  display: none;
+}
+#header {
+  color: #fff;
+  background-image: url("../Images/header.png");
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto 18px;
+  overflow: hidden;
+  text-align: center;
+}
+#wrapper{
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*Input and button styling*/
+.input-file-container {
+  position: relative;
+  width: 100%;
+}
+.js .input-file, .input-file2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.js .input-file-trigger {
+  width: 100%;
+  display: block;
+  padding: 14px 0px;
+  background: #00384d;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+/*hover effect button*/
+.js .input-file:hover + .input-file-trigger,
+.js .input-file-trigger:hover, .js .input-file2:hover
+ + .input-file-trigger,
+.js .input-file-trigger:hover {
+  color: green;
+}
+
+/*For bigger screen make adjustments here*/
+@media only screen and (min-width: 700px) {
+  form{
+    width: 300px;
+  }
+  #wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  #header {
+    background-image: url("../Images/header.png");
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .arrowUp {
+    display: none;
+  }
+  .arrowSide {
+    display: flex;
+    filter: opacity(50%);
+  }
+  .text {
+    display: flex;
+  }
+  .input-file-container {
+    width: 225px;
+    margin-left: 40px;
+  }
+  .js .input-file-trigger {
+    width: 100%;
+  }
+}
