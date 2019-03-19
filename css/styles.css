@@ -43,11 +43,6 @@ img {
 #wrapper{
   width: 100%;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 /*Input and button styling*/
@@ -75,7 +70,7 @@ img {
 /*hover effect button*/
 .js .input-file:hover + .input-file-trigger,
 .js .input-file-trigger:hover, .js .input-file2:hover
- + .input-file-trigger,
++ .input-file-trigger,
 .js .input-file-trigger:hover {
   color: green;
 }
@@ -88,6 +83,13 @@ img {
   #wrapper {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   #header {
     background-image: url("../Images/header.png");
